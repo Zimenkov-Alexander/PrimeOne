@@ -1,0 +1,118 @@
+.header{
+	width: 100%;
+	min-height: 175px;
+}
+.nav-wrapper{
+	display: flex;
+	flex-direction: column;
+	padding: 30px 60px 60px;
+	min-height: 175px;
+	text-transform: uppercase;
+}
+.nav__custom, .nav__main{
+	display: flex;
+	justify-content: space-between;
+}
+.nav__custom{
+	
+	align-items: center;
+	font-size: 12px;
+	font-family: $font-bebas;
+}
+.custom-list{
+	display: flex;
+	padding: 5px 0;
+	.list__item{
+		padding: 5px 8px;
+	}
+	.list__item:not(:last-child){
+		margin-right: 10px;
+	}
+	.list__item.active, .list__item:hover{
+		background-color: black;
+		a{
+			color: white;
+		}
+		&:active{
+			a{
+				color: rgba(255, 255, 255, 0.7);
+			}
+		}
+	}
+}
+.custom-online{
+	position: relative;
+	font-size: 1.25em;
+	word-spacing: 4px;	
+	& a {
+		border-bottom: 1px solid black ;
+	}
+	&:hover{
+		padding: 5px 7px;
+		background-color: black;
+		& a{
+			display: inline-block;
+			color: white;
+		}
+	}
+	&:active{
+		& a{
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+}
+.nav__main{
+	margin-top: 8px;
+	font-size: 1.1em;
+	
+	align-items: center;
+}
+.main__list{
+	display: flex;
+	.list__item:hover{
+		border-bottom: 1px solid black;
+	}
+	.list__item:active{
+		& a{
+			color: rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	.list__item:not(:last-child){
+		margin-right: 80px;
+	}
+
+	.list__item a{	
+		letter-spacing: 1.5px;
+	}
+}
+.logo{
+	position: relative;
+	&::before, &::after{
+		font-family: $font-bebas;
+		text-align: center;
+		font-size: 0.6em;
+		letter-spacing: 6px;
+
+		position: absolute;
+		content: '';
+		
+		width: 120px;
+		height: 30px;
+	}
+	&::before{
+		content: "NYC'S";
+		
+		top: 0;
+		left: 50%;
+		margin-left: -60px;
+		margin-top: -30px;
+	}
+	&::after{
+		content: "Catering";
+		bottom: 0;
+		right: 50%;
+		margin-right: -60px;
+		margin-bottom: -50px;
+	}
+}

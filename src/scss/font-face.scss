@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Bebas';
+	src: url('../font/bebas/Bebas.ttf') format('truetype'),
+		 url('../font/bebas/Bebas.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-BdCnd';
+  src: url('../font/akzidenz-grotesk-bq/AkzidenzGroteskBQ-BdCnd.ttf') format('truetype'),
+       url('../font/akzidenz-grotesk-bq/AkzidenzGroteskBQ-BdCnd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-bebas: 'Bebas', 'Arial Narrow', Arial, sans-serif;
+$font-akzidenz: 'AkzidenzGroteskBQ-BdCnd', 'Arial Narrow', Arial, sans-serif;
