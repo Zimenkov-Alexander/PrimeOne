@@ -6,7 +6,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 30px 60px 60px;
+	padding: 30px 60px 80px;
 	min-height: 175px;
 	text-transform: uppercase;
 }
@@ -146,7 +146,7 @@
 	}
 
 	.logo{
-		margin: 0 auto;
+		margin-left: 40px;
 	}
 	.main__list{	
 		.list__item:not(:last-child){
@@ -168,7 +168,7 @@
 	.main__list{
 		z-index: 3;
 		flex-direction: column;
-		position: absolute;
+		position: fixed;
 
 		.list__item:hover{
 			& a{
@@ -211,6 +211,7 @@
 		margin-bottom: 15px;
 	}
 	.logo{
+		margin: 0 auto;
 		margin-top: -50px;
 	}
 }
@@ -229,7 +230,7 @@
 		margin-bottom: 0px;
 	}
 	.main__list{
-		transform: translate(0px, -180px);
+		transform: translate(0px, -150px);
 		&:not(:first-child){
 			margin-top: 240px;
 		}

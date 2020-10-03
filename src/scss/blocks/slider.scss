@@ -1,0 +1,127 @@
+.slider-wrapper{
+	display: flex;
+	justify-content: space-between;
+
+	.slider, .slider-info{
+		width: 50%;
+	}
+}
+.slider{
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+.slide{
+	flex: 0 0 100%;
+	max-width: 100%;
+	img{
+		min-width: 100%;
+		min-height: 100%;
+	}
+}
+.slider-info{
+	padding: 82px 62px 0;
+	.info__title{
+		font-size: 3.14em;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin-bottom: 37px;
+	}
+	.info__desc{
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		max-width: 320px;
+		margin-bottom: 55px;
+		font-size: 0.94em;
+	}
+	.info-btn{
+		margin-bottom: 50px;
+	}
+	.btn--quote{
+		margin-right: 14px;
+	}
+	.info-link{
+		font-family: $font-bebas;
+		font-size: 0.94em;
+		letter-spacing: 1.5px;
+	
+		&:hover{
+			font-size: 1em;
+		}
+	}
+}
+.slider-info.info--black{
+	background-color: black;
+	*{
+		color: white;
+	}	
+	.btn--quote{
+		color: black;
+	}
+	.info-link{
+		border-bottom: 1px solid white;
+	
+		&:active{
+			color: rgba(255, 255, 255, 0.7);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+		}
+	}
+}
+.slider-info.info--white{
+	background-color: white;
+	*{
+		color: black;
+	}	
+	.btn--quote{
+		color: white;
+		background-color: black;
+
+		&:hover{
+			box-shadow: 200px 0 0 0 rgba(255, 255, 255, 0.3) inset;
+		}
+		&:active{
+			background-color: rgba(0, 0, 0, 0.7);
+			box-shadow: 200px 0 0 0 rgba(255, 255, 255, 0.3) inset;
+		}
+	}
+
+	.info-link{
+		border-bottom: 1px solid black;
+		&:active{
+			color: rgba(0, 0, 0, 0.7);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+		}
+	}
+}
+
+@media (max-width: $tablet-width){
+	.slider-wrapper{
+		.slider, .slider-info{
+			width: 100%;
+		}
+	}
+	.slide{
+		flex: 0 0 100%;
+		max-width: 10%;
+		img{
+			min-width: 50%;
+			min-height: 100%;
+		}
+	}
+}
+@media (max-width: $mobile-width){
+	.slider-wrapper{
+		flex-direction: column-reverse;
+		.slider, .slider-info{
+			width: 100%;
+		}
+	}
+	.slide{
+		flex: 0 0 100%;
+		max-width: 30%;
+		img{
+			min-width: 10%;
+			min-height: 10%;
+		}
+	}
+}
