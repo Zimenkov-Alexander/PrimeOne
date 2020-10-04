@@ -28,9 +28,7 @@ li{
 	font-size: 0.94em;
 	letter-spacing: 1.5px;
 	min-width: 155px;
-	background-color: white;
 	min-height: 50px;
-	color: black;
 	text-transform: uppercase;
 	border: none;
 	transition: 0.5s linear;
@@ -41,4 +39,31 @@ li{
 		background-color: rgba(255, 255, 255, 0.7);
 		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
 	}
+}
+.btn--black{
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	
+	&:hover{
+		box-shadow: 200px 0 0 0 rgba(252, 252, 252, 0.3) inset;
+	}
+	&:active{
+		background-color: rgba(255, 255, 255, 0.7);
+		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+	}
+}
+.btn--white{
+	background-color: white;
+	color: black;
+
+	&:hover{
+		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+	}
+	&:active{
+		background-color: rgba(255, 255, 255, 0.7);
+		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+	}
+}
+.link{
+	font-family: $font-bebas;
 }

@@ -29,7 +29,7 @@
 		margin-bottom: 37px;
 	}
 	.info__desc{
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-family: $font-segoeUI;
 		max-width: 320px;
 		margin-bottom: 55px;
 		font-size: 0.94em;
@@ -50,6 +50,7 @@
 		}
 	}
 }
+
 .slider-info.info--black{
 	background-color: black;
 	*{
