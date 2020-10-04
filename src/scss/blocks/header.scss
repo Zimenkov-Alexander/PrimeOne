@@ -12,7 +12,6 @@
 }
 .nav__custom, .nav__main{
 	display: flex;
-	// flex-wrap: wrap;
 	justify-content: space-between;
 }
 .nav__custom{	
@@ -65,22 +64,22 @@
 }
 .nav__main{
 	margin-top: 8px;
-	font-size: 1.1em;
-	
 	align-items: center;
 }
 .main__list{
 	display: flex;
-
 	.list__item a{	
 		letter-spacing: 1.5px;
 	}
 
 	.list__item:hover{
-		border-bottom: 1px solid black;
+		a{
+			border-bottom: 1px solid black;
+		}
 	}
 	.list__item:active{
-		& a{
+		a{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 			color: rgba(0, 0, 0, 0.7);
 		}
 	}
@@ -90,9 +89,10 @@
 	}
 }
 .logo{
+	font-size: 1.1em;
 	position: relative;
-	// padding: 0 20px;
 	&::before, &::after{
+		
 		font-family: $font-bebas;
 		text-align: center;
 		font-size: 0.6em;

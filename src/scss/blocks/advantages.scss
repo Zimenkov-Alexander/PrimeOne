@@ -1,0 +1,70 @@
+.advantages__wrapper{
+	display: flex;
+	flex-direction: column;
+	background-color: #ebebeb;
+}
+.advantages__title{
+	display: flex;
+	margin-bottom: 50px;
+
+	.title__item{
+		width: 50%;
+	}
+}
+.title__text{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 50px;
+
+	background-color: black;
+	.titile__name{
+		color: white;
+	}
+}
+.title__image{ 
+	background-color: yellow;
+	min-height: 150px;
+	max-height: 150px;
+	background-image: url(../img/advantages/1.jpg);
+	background-position: 50% 90%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.advantages__list{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 7.2%;
+}
+.advantages__item{
+	display: flex;
+	min-height: 100px;
+	width: 48%;
+	margin-bottom: 50px;
+
+	&:nth-child(2n-1){
+		margin-right: 30px;
+	};
+}
+.item__image{
+	min-width: 100px;
+	max-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+.item__info{
+	margin-left: 12px;
+}
+.info__title{
+	font-size: 25px;
+	letter-spacing: 2.5px;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+.info__desc{
+	font-family: $font-segoeUI;
+	font-size: 16px;
+}
