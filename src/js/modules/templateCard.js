@@ -1,4 +1,4 @@
-const cards = [
+const cardsTemblate = [
 	{
 		scr: 'img/menu/1.jpg',
 		alt: 'CardImage',
@@ -24,3 +24,5 @@ const cards = [
 		descr: 'We are able to serve events from 2 to 2000 guests and always reasonable prices.',
 	},
 ];
+
+// export default cardsTemblate;

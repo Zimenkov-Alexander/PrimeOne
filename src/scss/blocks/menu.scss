@@ -1,7 +1,6 @@
 .menu__wrapper{
 	padding-top: 50px;
 }
-
 .online-ordering{
 	display: flex;
 	justify-content: center;
@@ -16,9 +15,6 @@
 		color: white;
 	}
 }
-// .online-ordering.show-cards{
-// 	// display: none;
-// }
 .online-ordering.hide-cards{
 	margin-bottom: 50px;
 }
@@ -35,7 +31,6 @@
 	display: flex;
 	// transform: translate(0px, 0px);
 }
-
 .card__item{
 	display: flex;
 	flex-direction: column;
