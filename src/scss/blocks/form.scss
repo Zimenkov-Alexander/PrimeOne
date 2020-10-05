@@ -1,6 +1,46 @@
 .form{
 	width: 50%;
-}
-.form__wrapper{
+
 	background-color: black;
 }
+.form__wrapper{
+	padding: 55px 60px;
+}
+.form__name{
+	margin-bottom: 25px;
+	font-size: 25px;
+	letter-spacing: 2.5px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.contact-item{
+	max-width: 60%;
+	min-height: 50px;
+	border: solid 2px #959595;
+	background-color: #252525;
+	margin-bottom: 25px;
+	
+	input, textarea{
+		display: block;
+		width: 100%;
+		min-height: 50px;
+		max-height: 50px;
+		border: none;
+		background-color: inherit;
+
+		font-family: $font-segoeUI;
+		font-size: 15px;
+		padding: 0 18px;
+		color: #959595;
+
+
+	}
+	#message{
+		padding: 14px 18px;
+		max-width: 100%;
+		min-height: 100px;
+		resize: none;
+	}
+}
+

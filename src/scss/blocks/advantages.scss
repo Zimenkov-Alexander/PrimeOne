@@ -16,6 +16,7 @@
 	justify-content: flex-end;
 	align-items: center;
 	font-size: 50px;
+	text-transform: uppercase;
 
 	background-color: black;
 	.titile__name{
@@ -23,7 +24,7 @@
 	}
 }
 .title__image{ 
-	background-color: yellow;
+	background-color: #ebebeb;
 	min-height: 150px;
 	max-height: 150px;
 	background-image: url(../img/advantages/1.jpg);
@@ -46,6 +47,11 @@
 	&:nth-child(2n-1){
 		margin-right: 30px;
 	};
+	&:hover{
+		.item__image{
+			filter: invert(100%);
+		}
+	}
 }
 .item__image{
 	min-width: 100px;

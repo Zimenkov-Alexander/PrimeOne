@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	color: black;
+	
 }
 body{
 	font-family: $font-akzidenz;
@@ -10,6 +10,7 @@ body{
 	font-style: normal;	
 }
 a {
+	color: black;
 	text-decoration: none;
 }
 li{
@@ -37,7 +38,7 @@ li{
 	}
 	&:active{
 		background-color: rgba(255, 255, 255, 0.7);
-		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+		box-shadow: 200px 0 0 0 rgba(0,0,0,0.3) inset;
 	}
 }
 .btn--black{

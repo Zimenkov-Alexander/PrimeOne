@@ -1,0 +1,14 @@
+.footer__wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 7.2%;
+}
+
+.info__copyright{
+	a{
+		font-family: $font-segoeUI;
+		font-size: 16px;
+		color: #4d4d4d;
+	}
+}
