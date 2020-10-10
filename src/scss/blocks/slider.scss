@@ -1,7 +1,7 @@
 .slider-wrapper{
 	display: flex;
 	justify-content: space-between;
-
+	// min-height: 400px;
 	.slider, .slider-info{
 		width: 50%;
 	}
@@ -10,13 +10,13 @@
 	display: flex;
 	overflow: hidden;
 	position: relative;
-	width: 20%;
-	height: 65vh;
-  
+	height: auto;
+	background-color: black;
 	&__slides {
 	  z-index: 1;
 	  position: relative;
 	  height: 100%;
+	  min-height: 425px;
 	}
   
 	&__control {
@@ -123,6 +123,7 @@
 	  &:nth-child(#{$i}) {
 		.slide__inner {
 		  background-image: url(../img/slider/#{$i}.jpg);
+
 		}
 	  }
 	}
@@ -132,11 +133,22 @@
 	  left: 50%;
 	  top: 50%;
 	  width: 50vw;
-	  height: 40vw;
+	  height: 100%;
+	  max-height: 80vh;
 	  margin-left: 0vw;
 	  margin-top: -50vh;
 	  background-size: cover;
+
 	  background-position: center center;
+	//   position: absolute;
+	//   left: 50%;
+	//   top: 50%;
+	//   width: 50vw;
+	//   height: 40vw;
+	//   margin-left: 0vw;
+	//   margin-top: -50vh;
+	//   background-size: cover;
+	//   background-position: center center;
   
 	  &:before {
 		content: "";
