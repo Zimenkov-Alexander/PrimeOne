@@ -1,19 +1,14 @@
 .contacts__wrapper{
 	margin-top: 80px;
 	padding: 0px 7.2%;
-
 	margin-bottom: 80px;
 }
-
 .contacts__title{
 	font-size: 50px;
-
 	letter-spacing: 5px;
 	text-transform: uppercase;
-
 	margin-bottom: 35px;
 }
-
 .contacts__list{
 	display: flex;
 	flex-wrap: wrap;	
@@ -22,7 +17,6 @@
 	font-family: $font-segoeUI;
 	min-width: 49%;
 	font-size: 16px;
-
 	margin-bottom: 20px;
 
 	&:nth-child(2n-1){
@@ -30,12 +24,15 @@
 	}
 }
 .contacts__link{
+	transition: 0.3s;
 	position: relative;
+	padding-bottom: 0px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
 	&:not(.contacts__link--social){
 		margin-left: 40px;
 	}
-
 	&:not(.contacts__link--social)::before{
+		transition: 1s;
 		content: '';
 		position: absolute;
 		top: 0;
@@ -50,6 +47,25 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
+	&:not(.contacts__link--social):hover{
+		transition: 0.3s;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #000;
+		&::before{
+			transition: 1s;
+			transform: scale(0.9, 0.8) translate(0, 5px) ;
+		}
+	}
+}
+.contacts__link--social{
+	transition: 0.3s;
+	opacity: 1;
+	&:hover{
+		opacity: 0.7;
+	}
+	&:active{
+		opacity: 0.2;
+	}
 }
 .contacts__link--address::before{
 	background-image: url(../img/contacts/address.svg);
@@ -60,9 +76,6 @@
 .contacts__link--phone::before{
 	background-image: url(../img/contacts/phone.svg);
 }
-
-
-
 .contacts__link--social:not(:first-child){
 	margin-left: 30px;
 }

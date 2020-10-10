@@ -1,7 +1,6 @@
 .slider-wrapper{
 	display: flex;
 	justify-content: space-between;
-	// min-height: 400px;
 	.slider, .slider-info{
 		width: 50%;
 	}
@@ -92,7 +91,6 @@
 	  }
 	}
   }
-
 .slide {
 	overflow: hidden;
 	position: absolute;
@@ -206,11 +204,13 @@
 		margin-right: 14px;
 	}
 	.info-link{
+		transition: 1s ease;
 		font-family: $font-bebas;
 		font-size: 0.94em;
 		letter-spacing: 1.5px;
 	
 		&:hover{
+			padding-bottom: 5px;
 			font-size: 1em;
 		}
 	}

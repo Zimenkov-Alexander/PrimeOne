@@ -1,3 +1,6 @@
+.advantages{
+	transition: 1s;
+}
 .advantages__wrapper{
 	display: flex;
 	flex-direction: column;
@@ -43,12 +46,18 @@
 	min-height: 100px;
 	width: 48%;
 	margin-bottom: 50px;
-
+	transition: 1s;
 	&:nth-child(2n-1){
 		margin-right: 30px;
 	};
+	.item__image{
+		transition: 1.5s;
+	}
+
 	&:hover{
 		.item__image{
+			transform: scale(1, -0.7)  rotate(-0.5turn);
+			background-color: #ebebeb00;
 			filter: invert(100%);
 		}
 	}

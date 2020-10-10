@@ -59,10 +59,18 @@ function card (){
 	
 	let сheck = false;
 	
+	let cardList = document.querySelector('.card__list');
+
 	onlineOrdering.addEventListener('click', () => {
 		onlineOrdering.classList.toggle('hide-cards');
 		onlineOrdering.classList.toggle('show-cards');
 	
+		if (onlineOrdering.classList.contains('hide-cards')){
+			document.querySelector('.advantages').style.marginTop = - cardList.clientHeight +'px';
+		} else {
+			document.querySelector('.advantages').style.marginTop = '0px';
+		}
+
 		if (!сheck){
 			cards.forEach(({scr, alt, title, descr}) => {
 				new CreateCard(scr,alt,title,descr, '.card__list').render();

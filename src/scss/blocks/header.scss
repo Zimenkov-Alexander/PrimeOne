@@ -23,11 +23,15 @@
 	display: flex;
 	padding: 5px 0;
 	.list__item{
+		transition: 0.5s ease-in-out;
 		cursor: pointer;
 		padding: 5px 8px;
 	}
 	.list__item:not(:last-child){
 		margin-right: 10px;
+	}
+	.list__item.active{
+		transition: 1s ease;
 	}
 	.list__item.active, .list__item:hover{
 		background-color: black;
@@ -44,8 +48,10 @@
 .custom-online{
 	position: relative;
 	font-size: 1.25em;
-	word-spacing: 4px;	
+	word-spacing: 4px;
+	transition: 0.5s ease-in-out;	
 	& a {
+		transition: 0.5s ease-in-out;
 		border-bottom: 1px solid black ;
 	}
 	&:hover{
@@ -58,6 +64,7 @@
 	}
 	&:active{
 		& a{
+			transition: none;
 			color: rgba(255, 255, 255, 0.7);
 		}
 	}
@@ -65,25 +72,33 @@
 .nav__main{
 	margin-top: 8px;
 	align-items: center;
+	
 }
 .main__list{
 	display: flex;
-	.list__item a{	
-		letter-spacing: 1.5px;
+	transition: 1.5s ease-in-out;
+	
+	.list__item{
+		a{
+			transition: 0.3s ease-in-out;
+			padding-bottom: 0px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0);
+			letter-spacing: 1.5px;
+		}
 	}
-
 	.list__item:hover{
 		a{
+			padding-bottom: 6px;
 			border-bottom: 1px solid black;
 		}
 	}
 	.list__item:active{
 		a{
+			transition: none;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 			color: rgba(0, 0, 0, 0.7);
 		}
 	}
-
 	.list__item:not(:last-child){
 		margin-right: 80px;
 	}
