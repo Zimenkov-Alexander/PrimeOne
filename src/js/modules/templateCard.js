@@ -25,4 +25,4 @@ const cardsTemblate = [
 	},
 ];
 
-// export default cardsTemblate;
+export default cardsTemblate;

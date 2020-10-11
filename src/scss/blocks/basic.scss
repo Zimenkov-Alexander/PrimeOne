@@ -5,6 +5,7 @@
 	
 }
 body{
+	position: relative;
 	font-family: $font-akzidenz;
 	font-weight: normal;
 	font-style: normal;	
@@ -55,6 +56,18 @@ li{
 }
 .btn--white{
 	background-color: white;
+	color: black;
+
+	&:hover{
+		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+	}
+	&:active{
+		background-color: rgba(255, 255, 255, 0.7);
+		box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+	}
+}
+.btn--grey{
+	background-color: rgb(240, 240, 240);
 	color: black;
 
 	&:hover{

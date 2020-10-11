@@ -1,4 +1,5 @@
-// import cardsTemblate from 'templateCard';
+import cardsTemblate from './templateCard';
+import modal from './modal';
 
 function card (){
 
@@ -20,43 +21,16 @@ function card (){
 			</div>
 			<h3 class="card__title">${this.title}</h3>
 			<p class="card__desc">${this.descr}</p>
-			<button class="btn__card btn btn--black">Get a quote</button>
+			<button class="btn__card btn btn--black view-menus">Get a quote</button>
 			<p class="card__link">
-				<a class="link" href="#">View menus</a>
+				<a class="link view-menus" href="#">View menus</a>
 			</p>
 			`;
 			div.classList.add('card__item');
 			this.parent.append(div);
 		}
 	}
-	
-	const cards = [
-		{
-			scr: 'img/menu/1.jpg',
-			alt: 'CardImage',
-			title: 'Corporate catering',
-			descr: 'We are able to serve events from 2 to 2000 guests and always reasonable prices.',
-		},
-		{
-			scr: 'img/menu/2.jpg',
-			alt: 'CardImage',
-			title: 'Private catering',
-			descr: 'We are able to serve events from 2 to 2000 guests and always reasonable prices.',
-		},
-		{
-			scr: 'img/menu/3.jpg',
-			alt: 'CardImage',
-			title: 'Wedding catering',
-			descr: 'We are able to serve events from 2 to 2000 guests and always reasonable prices.',
-		},
-		{
-			scr: 'img/menu/4.jpg',
-			alt: 'CardImage',
-			title: 'Online Ordering',
-			descr: 'We are able to serve events from 2 to 2000 guests and always reasonable prices.',
-		},
-	];
-	
+
 	let сheck = false;
 	
 	let cardList = document.querySelector('.card__list');
@@ -72,16 +46,14 @@ function card (){
 		}
 
 		if (!сheck){
-			cards.forEach(({scr, alt, title, descr}) => {
+			cardsTemblate.forEach(({scr, alt, title, descr}) => {
 				new CreateCard(scr,alt,title,descr, '.card__list').render();
 			});
+			modal('.view-menus', '.modal.modal--page');
 			сheck = true;
 		}
 		
 	});
 }
 
-card ();
-
-
-// export default card;
+export default card;

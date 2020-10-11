@@ -1,3 +1,13 @@
+.footer{
+	transition: 1s;
+	opacity: 0;
+	// transform: translate(0px, 120%);
+}
+.footer._active{
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
 .footer__wrapper{
 	display: flex;
 	justify-content: space-between;

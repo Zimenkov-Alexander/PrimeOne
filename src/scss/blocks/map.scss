@@ -1,5 +1,12 @@
 .map-form__wrapeer{
 	display: flex;
+	transition: 1s;
+	opacity: 0;
+	transform: translate(-200%, 0%);
+}
+.map-form__wrapeer._active{
+	opacity: 1;
+	transform: translate(0px, 0);
 }
 .map{
 	width: 50%;

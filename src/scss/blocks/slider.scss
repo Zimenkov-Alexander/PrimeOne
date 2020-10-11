@@ -1,9 +1,16 @@
 .slider-wrapper{
 	display: flex;
 	justify-content: space-between;
+	transition: 1s;
+	opacity: 0;
+	transform: translate(-200%, 0%);
 	.slider, .slider-info{
 		width: 50%;
 	}
+}
+.slider-wrapper._active{
+	opacity: 1;
+	transform: translate(0px, 0);
 }
 .slider {
 	display: flex;
@@ -190,15 +197,36 @@
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		margin-bottom: 37px;
+		transform: translate(0px, -100%);
+		opacity: 0;
+		transition: all 1s ease 1s;
+	}
+	.info__title._active{
+		opacity: 1;
+		transform: translate(0px, 0);
 	}
 	.info__desc{
 		font-family: $font-segoeUI;
 		max-width: 320px;
 		margin-bottom: 55px;
 		font-size: 0.94em;
+		transform: translate(0px, -100%);
+		opacity: 0;
+		transition: all 1s ease 1s;
+	}
+	.info__desc._active{
+		opacity: 1;
+		transform: translate(0px, 0);
 	}
 	.info-btn{
 		margin-bottom: 50px;
+		transform: translate(0px, -100%);
+		opacity: 0;
+		transition: all 1s ease 1s;
+	}
+	.info-btn._active{
+		opacity: 1;
+		transform: translate(0px, 0);
 	}
 	.btn--quote{
 		margin-right: 14px;

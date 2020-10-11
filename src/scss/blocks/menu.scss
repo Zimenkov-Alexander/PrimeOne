@@ -1,3 +1,13 @@
+.menu{
+	transition: 1s;
+	opacity: 0;
+	transform: translate(0px, 100%);
+}
+.menu._active{
+	opacity: 1;
+	transform: translate(0px, 0);
+}
+
 .menu__wrapper{
 	padding-top: 50px;
 }
@@ -32,11 +42,11 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	transform: translate(0px, -30px);
-	transition: 1s;
+	transition: 0.5s;
 }
 .hide-cards + .card__list{
 	opacity: 0;
-	transform: translate(0px, -500px) scale(0, 0) ;
+	transform: translate(0px, 500%) scale(0);
 }
 .show-cards + .card__list{
 	transition: 1s;

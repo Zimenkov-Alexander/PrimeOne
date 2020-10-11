@@ -9,10 +9,10 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header _anim-items">
 			<div class="container">
 				<nav class="nav-wrapper">
-					<span id="burger" class="burger burger--close"></span>
+					<span id="burger-nav" class="burger burger--close"></span>
 					<div class="nav__custom">
 						<ul class="custom-list">
 							<li class="list__item active" id="EN"><a class="link" href="#">EN</a></li>
@@ -103,7 +103,7 @@
 		</header>
 		<main class="main">
 			<section class="block-slider">
-				<div class="slider-wrapper">	
+				<div class="slider-wrapper _anim-items">	
 					<div class="slider">
 						<div class="slider__slides">
 						  <div class="slide s--active">
@@ -134,20 +134,19 @@
 						  <div class="slider__control-line"></div>
 						</div>
 					</div>
-				
-				<div class="slider-info info--black">
+					<div class="slider-info info--black">
 					<div class="info">
-						<h2 class="info__title">Private <br> catering</h2>
-						<p class="info__desc">Treat your guests to a beautifully plated dinner, hand-crafted canapes or a casual BBQ.</p>
+						<h2 class="info__title _anim-items">Private <br> catering</h2>
+						<p class="info__desc _anim-items">Treat your guests to a beautifully plated dinner, hand-crafted canapes or a casual BBQ.</p>
 					</div>
-					<div class="info-btn">
-						<button class="btn btn--quote">Get a quote</button>
-						<a class="link info-link" href="#">View menus</a>
+					<div class="info-btn _anim-items">
+						<button class="btn btn--quote view-menus">Get a quote</button>
+						<a class="link info-link view-menus" href="#">View menus</a>
 					</div>
 				</div>
 			</div>
 			</section>
-			<section class="menu">
+			<section class="menu _anim-items">
 				<div class="menu__wrapper container">
 					<div class="online-ordering hide-cards">
 						<p class="online-ordering__text">online ordering</p>
@@ -155,7 +154,7 @@
 					<div class="card__list"></div>
 				</div>
 			</section>
-			<section class="advantages">
+			<section class="advantages _anim-items">
 				<div class="advantages__wrapper">
 					<div class="advantages__title">
 						<div class="title__text title__item">
@@ -164,7 +163,7 @@
 						<div class="title__image title__item"></div>
 					</div>
 					<div class="advantages__list container">
-						<div class="advantages__item">
+						<div class="advantages__item ">
 							<div class="item__image">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="70" viewBox="0 0 49 70">
 									<image id="flower" width="49" height="70" xlink:href="data:image/png;base64,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"/>
@@ -175,7 +174,7 @@
 								<p class="info__desc">Fresh, seasonal and simple cuisine. Food is our business and our passion.</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item ">
 							<div class="item__image">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
 									<image id="timeIcon" width="70" height="70" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAFZElEQVR4nO1bTYgcRRT+dvatmUGX4CGrQVBUEteoWVA0iH8IHqIh+EP8OxgDKugaFBWEHDx4UPGgUUQieFBEFAl48C9EYS+iiMQcEmdJdGN0VVTUEIlmZjPfzMhb30DPdPfMdm9Nd+/YHwzbXdVV9frbrvdT9Wqo2WxCRJA2SDZVBBEZSloUkr6yQuqMZBQ5MSHIBDEkixkQow2JEUPybpLbSJ7UWddoNDZ7nrsqoO0YyWdIbkhCVkUiWpfkpQBet9vjAF701hcKhbLn9vuALp4CcC+AGskVIvJXfyVO6IupVCq/ANCXUcvzTWe9iHzmuf4xoIsWcYcB/NNXYQ3OzDXJEoCtAGZF5J2A+jEAp4jIdyHtu5prkuPW9/GOcn1+a6PRYKFQeEVEmjFk95W5JOZxAM/a7UUi8nXE9rH8GJKbAOy06/XFYnF3lPYIIcaljjlkU0WnzJ9RGy/CsdPpVdNfvV4/HLMPH5x6viTPVmJE5IgrARc47ukA6iLye8z2vrI8JHAVEpC8nORukve5EqxfIPk0yV0kz406ROQvRgcCsB7AnIg481hdfzFGxozdbheRR7s86yuL48fsbDabVQBvx2ibJGYBTAE4CuC9qOPmOiZfdoiGnJgQdJ1DFgk/COAHEXk3TUFdwMKHewCMAOgaPvRSLpMAnlePluR5IvJt5t42GjYCeNVaaBS/K6x1L2Jm7e8R+y11aOROC11+7vYuPa0SydVKioj80U9SkrJKJM9SYkRk1lPmey4317m5joacmBAEEkPyYpJnZkHAfoLkGrW2QUP4iCF5F4CvdJ3V1jkGEiTXAdhn68mX9SQGgK7NKk4GsHxQiQFwGoBh+411VgaZo5d0SUGXDEXkYDIypoL3AWw2n+bDTgFyc52b62jIyt71OZ7rVelK8x9SJ0b3tAF496D2k5xMUaR5tOkYyzrYQvJQsVj8pN+D23bLQVsG8KIBYK2IlLv34ESG22z8t0wRz0NsSaHtYSXKW9ZLIbYU52JQLpfnx5yYmIB9yRs8e9ZOESLvm96bzCjfQiFbdsBnrjVlo1Kp/Do6OhqUdeAUpnQPpDyVVtv4bWOl7seY8t0BoGRF6lw+JiIvJyiDrywTDp59ORvNPf9ARHw5NH0e31eWGc83TeSebwQELTusIPkaySdsu2EgoRlgJF8guR3Ass53DJpD96uTZ9cade4dUG5uAvCwXX8BoC09LogYTRSsAPjJky0wiNhjmV9NW5hrQ6DytdCAIuLXSgMEksuMmBMLIub/htwqRUBOTAi6EkNymOSdmneXppAuQfJmktf36rLXF/OArVN8asHWkgZJDTs0neWjoMMcXvTSuq0MhzqAv5c6MQCOeRaj5ro9uJBshysB/DYAuTHzIHmJZTvs9ZT5nsvNdW6uoyEWMSQvyOJxvU6QXO7dmomCOCnzT9p2x+d9eh8nIDkKYFrjPXU5ovYZ54s53/6uIpll5XQqgJWqRwGsido4zos9AkAt1MdZDjI1x47k7QAuBPBc1Pa5Veq3VbLw4Q6S17jqM8LYN5C81mWfLs31FjuRMpXkxjzJG22lcaqXmx8FLok51pK1l7sdBN02jbnV2zpu3LSzkU7g+kyk/seOisj+zrpqtXq1iJyha6si0ghoG5o4ZEeXbwXwpYgcCKi/olarzZVKpT0x5faVJaJ8LTJXn2K4VqtNlkqlHR31Q7YtG0aMnux/yA5lrRSRqmP5fGVJhQQnLELHyMhI0En7Ta0LkmsD6luS12ZmZhadWbEQJEKMiOhJD41qrxORNzrr6/W6d2r5ptn09PQ2ALcAWDc+Ph5Zf8VBnpyYR9fRkBMTgpyYIAD4F7uDwy2JfR02AAAAAElFTkSuQmCC"/>
@@ -186,7 +185,7 @@
 								<p class="info__desc">Successful catering is about organisation, high quality service, and great food.</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item ">
 							<div class="item__image">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="68" viewBox="0 0 59 68">
 									<image id="leaf" width="59" height="68" xlink:href="data:image/png;base64,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"/>
@@ -197,7 +196,7 @@
 								<p class="info__desc">We use only the best organic ingredients and gluten and dairy free cooking.</p>
 							</div>
 						</div>
-						<div class="advantages__item">
+						<div class="advantages__item ">
 							<div class="item__image">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="64" viewBox="0 0 60 64">
 									<image id="Group_2" data-name="Group 2" width="60" height="64" xlink:href="data:image/png;base64,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"/>
@@ -211,7 +210,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contacts">
+			<section class="contacts _anim-items">
 				<div class="contacts__wrapper container">
 					<h2 class="contacts__title">Say Hello</h2>
 					<div class="contacts__list">
@@ -219,29 +218,29 @@
 							<a class="contacts__link contacts__link--address" href="#">Улица Ломоносова 44. Киев, Украина.</a>
 						</div>
 						<div class="contacts__item">
-							<a class="contacts__link contacts__link--email" href="#">ZimenkovIUAI@gmail.com</a>
+							<a class="contacts__link contacts__link--email" href="mailto:ZimenkovIUAI@gmail.com" >ZimenkovIUAI@gmail.com</a>
 						</div>
 						<div class="contacts__item">
-							<a class="contacts__link contacts__link--phone" href="#">+38098150300</a>
+							<a class="contacts__link contacts__link--phone" href="tel:+38098150300">+38098150300</a>
 						</div>
 						<div class="contacts__item">
-							<a class="contacts__link contacts__link--social contacts__link--facebook" href="#">
+							<a class="contacts__link contacts__link--social contacts__link--facebook" href="https://www.facebook.com/AlexZimenkov97/">
 								<img src="img/contacts/facebook.svg" alt="facebook">
 							</a>
-							<a class="contacts__link contacts__link--social contacts__link--twitter" href="#">
+							<a class="contacts__link contacts__link--social contacts__link--twitter" href="https://twitter.com/Alex__Zimenkov">
 								<img src="img/contacts/twitter.svg" alt="twitter">
 							</a>
-							<a class="contacts__link contacts__link--social contacts__link--instagram" href="#">
+							<a class="contacts__link contacts__link--social contacts__link--instagram" href="https://www.instagram.com/zimenkov_ua">
 								<img src="img/contacts/instagram.svg" alt="instagram">
 							</a>
-							<a class="contacts__link contacts__link--social contacts__link--google" href="#">
+							<a class="contacts__link contacts__link--social contacts__link--google" href="http://zimenkov.site/">
 								<img src="img/contacts/google_plus.svg" alt="google+">
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<div class="map-form__wrapeer">
+			<div class="map-form__wrapeer _anim-items">
 				<section class="map">
 					<div class="map-wrapper">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3620.9581318190912!2d30.468201582423706!3d50.38718993426763!3m
@@ -264,20 +263,19 @@
 							</p>
 							<p class="contact-item item--message">
 								<label for="message"></label>
-								<!-- <input id="message" type="text" name="message" value="" placeholder="Your message"> -->
 								<textarea id="message" placeholder="Your message" type="text" name="message" value="" ></textarea>
 							</p>
 						</form>
 
-						<button class="btn btn--white" type="submit">Send message</button>
+						<button class="btn btn--white btn--form" type="submit">Send message</button>
 					</div>
 				</section>
 			</div>
 		</main>
-		<footer class="footer">
+		<footer class="footer _anim-items">
 			<div class="footer__wrapper container">
 				<div class="footer__info">
-					<p class="info__copyright"><a href="https://www.facebook.com/AlexZimenkov97">© PrimeOne Catering 2020. Terms & Conditions</a></p>
+					<p class="info__copyright"><a href="http://zimenkov.site/">© PrimeOne Catering 2020. Terms & Conditions</a></p>
 				</div>
 				<div class="footer__logo">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="39" viewBox="0 0 156 39">
@@ -319,12 +317,78 @@
 			</div>
 		</footer>
 	</div>
+	<section class="modal modal--page hide">
+		<div class="modal__wrapper">
+			<div class="modal__header">
+				<h2 class="modal__title">Page (Name page)</h2>
+				<div class="modal__close close--page"></div>
+			</div>
+			<div class="modal__main">
+				<h3 class="main__title" id="text">This is a stub</h3>
+				<p class="main__text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Dolor rem labore, unde vel explicabo laboriosam officiis
+					quis reiciendis pariatur. Ullam odio officiis labore error
+					dolorem, deserunt provident voluptas delectus eligendi.
+				</p>
+			</div>
+			<div class="modal__footer">
+				<div class="social__modal">
+					<a class="contacts__link contacts__link--social contacts__link--facebook" href="https://www.facebook.com/AlexZimenkov97/">
+						<img src="img/contacts/facebook.svg" alt="facebook">
+					</a>
+					<a class="contacts__link contacts__link--social contacts__link--twitter" href="https://twitter.com/Alex__Zimenkov">
+						<img src="img/contacts/twitter.svg" alt="twitter">
+					</a>
+					<a class="contacts__link contacts__link--social contacts__link--instagram" href="https://www.instagram.com/zimenkov_ua">
+						<img src="img/contacts/instagram.svg" alt="instagram">
+					</a>
+					<a class="contacts__link contacts__link--social contacts__link--google" href="http://zimenkov.site/">
+						<img src="img/contacts/google_plus.svg" alt="google+">
+					</a>
+				</div>
+			</div>
+			<div class="modal__btns">
+				<button class="btn btn--black btn--modal btn--modal-page ">OK</button>
+				<button class="btn btn--grey btn--modal btn--modal-page">Close</button>
+			</div>
+		</div>
+	</section>
+	<section class="modal modal--form hide">
+		<div class="modal__wrapper">
+			<div class="modal__close close--form"></div>
+			<div class="modal__main">
+				<h3 class="main__title" id="text">
+					Thank you for your message,<br>
+					 we will contact you soon
+				</h3>
+			</div>
+			<div class="modal__btns">
+				<button class="btn btn--black btn--modal btn--modal-form">Close</button>
+			</div>
+		</div>
+	</section>
+	<section class="modal modal--map hide">
+		<div class="modal__wrapper">
+			<div class="modal__close close--map"></div>
+			<div class="modal__main">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1
+					m3!1d2543.9114101320765!2d30.466219316453206!3d50.386849979466
+					63!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8e
+					0fd4c243d%3A0x8648acaaf6f0f8d2!2z0YPQuy4g0JzQuNGF0LDQuNC70LAg0
+					JvQvtC80L7QvdC-0YHQvtCy0LAsIDQ0LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2
+					!1sru!2sua!4v1602437290337!5m2!1sru!2sua"
+					width="600" height="450" frameborder="0" style="border:0;"
+					allowfullscreen="" aria-hidden="false" tabindex="0">
+				</iframe>
+			</div>
+			<div class="modal__btns">
+				<button class="btn btn--black btn--modal btn--modal-map">Close</button>
+			</div>
+		</div>
+	</section>
 
-    <script src="src/js/modules/open-modal.js"></script>
-    <script src="src/js/modules/switch-language.js"></script>
-    <script src="src/js/modules/card.js"></script>
-    <script src="src/js/modules/slider.js"></script>
-    <!-- <script src="js/bundle.js"></script> -->
+    <script src="js/bundle.js"></script>
 </body>
 </html>
 

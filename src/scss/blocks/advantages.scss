@@ -1,6 +1,13 @@
 .advantages{
 	transition: 1s;
+	opacity: 0;
+	transform: translate(0px, 120%);
 }
+.advantages._active{
+	opacity: 1;
+	transform: translate(0px, 0%);
+}
+
 .advantages__wrapper{
 	display: flex;
 	flex-direction: column;

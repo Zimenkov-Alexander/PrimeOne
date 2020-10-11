@@ -1,9 +1,6 @@
-"use strict";
-
-function openModal () {
-
-	const btn = document.querySelector('#burger'),
-		  mainList = document.querySelectorAll('.main__list');
+function modalNav() {
+	const btn = document.querySelector('#burger-nav'),
+	mainList = document.querySelectorAll('.main__list');
 
 	btn.addEventListener('click', () => {
 		btn.classList.toggle('burger--close');
@@ -15,7 +12,4 @@ function openModal () {
 	});
 }
 
-openModal();
-
-
-// export default openModal;
+export default modalNav;

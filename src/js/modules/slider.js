@@ -2,7 +2,7 @@ function slider() {
 	let $slides = document.querySelectorAll('.slide');
 	let $controls = document.querySelectorAll('.slider__control');
 	let numOfSlides = $slides.length;
-	let slidingAT = 1300; // sync this with scss letiable
+	let slidingAT = 1300; 
 	let slidingBlocked = false;
   
 	[].slice.call($slides).forEach(function($el, index) {
@@ -54,8 +54,6 @@ function slider() {
 		slidingBlocked = false;
 	  }, slidingAT*0.75);
 	}
-  }
+}
 
-slider();
-
-// export default slider;
+export default slider;

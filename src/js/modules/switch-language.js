@@ -1,5 +1,3 @@
-"use strict";
-
 function switchLanguage () {
 	
 	const languages = document.querySelectorAll('.custom-list .list__item');
@@ -18,6 +16,4 @@ function switchLanguage () {
 	});
 }
 
-switchLanguage ();
-
-// export default switchLanguage;
+export default switchLanguage;

@@ -1,3 +1,13 @@
+.contacts{
+	transition: 1s;
+	opacity: 0;
+	transform: translate(0px, 100%);
+}
+.contacts._active{
+	opacity: 1;
+	transform: translate(0px, 0);
+}
+
 .contacts__wrapper{
 	margin-top: 80px;
 	padding: 0px 7.2%;
