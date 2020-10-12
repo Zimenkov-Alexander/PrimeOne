@@ -264,6 +264,16 @@ function modal (openBtn, pageModal) {
 	});
 
 	function openModal() {
+		const btn = document.querySelector('#burger-nav');
+		if (btn.classList.contains('burger--active')){
+
+			btn.classList.toggle('burger--close');
+			btn.classList.toggle('burger--active');
+		
+			document.querySelectorAll('.main__list').forEach(list  => {
+				list.classList.toggle('hide');
+			});
+		}
 		modalPage.classList.remove('hide');
 		modalPage.classList.add('show');
 		document.body.style.overflow = 'hidden';
@@ -272,6 +282,7 @@ function modal (openBtn, pageModal) {
 		modalPage.classList.remove('show');
 		modalPage.classList.add('hide');
 		document.body.style.overflow = '';
+
 	}	
 }
 

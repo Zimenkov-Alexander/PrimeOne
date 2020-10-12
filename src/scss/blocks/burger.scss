@@ -1,7 +1,10 @@
 @media (max-width: $tablet-width){	
 	.burger{
-		z-index: 2;
+		position: fixed;
+		z-index: 99;
 		margin-left: 30px;
+
+		transition: 1s;
 	}
 	.burger--close{
 		position: fixed;
@@ -31,9 +34,9 @@
 	}
 	.burger--active{
 		position: fixed;
-
+		z-index: 99;
 		width: 280px;
-		height: 280px;
+		height: 290px;
 		
 		transform: translate(-130px, 0);
 
@@ -43,17 +46,16 @@
 			position: fixed;
 			content: '';
 			top: 0;
-			left: 0;
+			right: 0;
 			width: 25px;
 			height: 3px;
-			
 			background-color: rgb(255, 255, 255);
 		}
 		&::before{
-			transform: translate(230px, 30px) rotate(45deg);
+			transform: translate(-30px, 40px) rotate(45deg);
 		}
 		&::after{
-			transform: translate(230px, 30px) rotate(-45deg);
+			transform: translate(-30px, 40px) rotate(-45deg);
 		}
 	}
 }

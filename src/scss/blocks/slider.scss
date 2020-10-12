@@ -243,7 +243,6 @@
 		}
 	}
 }
-
 .slider-info.info--black{
 	background-color: black;
 	*{
@@ -290,6 +289,7 @@
 
 @media (max-width: $tablet-width){
 	.slider-wrapper{
+		margin-top: 10px;
 		.slider, .slider-info{
 			width: 100%;
 		}
