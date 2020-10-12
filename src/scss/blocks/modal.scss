@@ -12,7 +12,7 @@
 		position: fixed;
 		display: flex;
 		flex-direction: column;
-	
+		transform: translate(0, 0) scale(0);
 		width: 800px;
 		min-height: 300px;
 		top: 15%;
@@ -34,6 +34,9 @@
 	width: 100%;
 	opacity: 1;
 	transform: translate(0, 0);
+	.modal__wrapper{
+		transform: translate(0, 0) scale(1);
+	}
 
 }
 .modal__close{
