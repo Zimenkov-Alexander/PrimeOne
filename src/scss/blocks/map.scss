@@ -19,3 +19,22 @@
 	}
 
 }
+@media (max-width: $tablet-width){
+	.map-form__wrapeer{
+		opacity: 1;
+		transform: translate(0px, 0%);
+	}
+}
+@media (max-width: $mobile-width){
+	.map-form__wrapeer{
+		flex-direction: column-reverse;
+	}
+	.map{
+		width: 100%;
+	}
+	.map-wrapper{
+		iframe{
+			max-height: 200px;
+		}
+	}
+}
