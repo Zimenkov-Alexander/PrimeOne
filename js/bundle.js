@@ -156,12 +156,16 @@ function card (){
 			<div class="card__image">
 				<img src="${this.scr}" alt="${this.alt}">
 			</div>
-			<h3 class="card__title">${this.title}</h3>
-			<p class="card__desc">${this.descr}</p>
-			<button class="btn__card btn btn--black view-menus">Get a quote</button>
-			<p class="card__link">
-				<a class="link view-menus" href="#">View menus</a>
-			</p>
+			<div class="card__info"> 
+				<h3 class="card__title">${this.title}</h3>
+				<p class="card__desc">${this.descr}</p>
+			</div>
+			<div class="btns_card"> 
+				<button class="btn__card btn btn--black view-menus">Get a quote</button>
+				<p class="card__link">
+					<a class="link view-menus" href="#">View menus</a>
+				</p>
+			</div>
 			`;
 			div.classList.add('card__item');
 			this.parent.append(div);

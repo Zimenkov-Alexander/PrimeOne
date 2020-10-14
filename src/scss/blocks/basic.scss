@@ -82,3 +82,9 @@ li{
 .link{
 	font-family: $font-bebas;
 }
+
+@media (max-width: $tablet-width){
+	.container{
+		margin: 0;
+	}
+}
